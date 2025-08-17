@@ -1,119 +1,156 @@
+<div align="center">
+  <p>
+    <a href="#-english-version">English</a> | <a href="#-中文版本">中文</a>
+  </p>
+</div>
+
 # Albert's Personal Homepage
 
-![Website Screenshot](assets/images/screenshot.png) <!-- 建议您截一张网站的图，并命名为 screenshot.png 放在 assets/images/ 目录下 -->
+<!-- 建议您截一张网站的图，命名为 screenshot.png 并放在 assets/images/ 目录下 -->
+![Website Screenshot](./assets/images/screenshot.png)
 
-欢迎来到我的个人主页项目仓库。这是一个从零开始构建的、现代化的、响应式的静态网站，用于展示我的个人信息、项目、技能和社交链接。
+一个从零开始构建的、优雅的、完全响应式的个人作品集网站。项目注重代码整洁、模块化和高质量的用户体验。
 
-**[➡️ 访问在线演示](https://Albert-Chen04.github.io)** <!-- 请将此链接替换为您部署后的真实网址 -->
-
----
-
-## ✨ 主要特色
-
-- **完全响应式设计**: 无论在桌面、平板还是手机上，都能提供优美的浏览体验。
-- **清晰的模块化结构**: 项目遵循内容(HTML)、表现(CSS)、行为(JavaScript)三者分离的原则，代码结构清晰，易于维护和扩展。
-- **组件化CSS**: 使用独立的CSS文件管理页面各个部分的样式，修改特定区域的样式变得非常简单。
-- **原生JS交互**: 所有交互功能（如导航、弹窗、筛选）均使用原生JavaScript实现，轻量且无依赖。
-- **现代化UI/UX**: 简洁的设计、平滑的动画效果和优秀的用户体验。
-- **易于定制**: 只需修改HTML文件和`assets/css/main.css`中的CSS变量，即可轻松定制个人信息和主题颜色。
+**[➡️ 在线演示](https://albert-chen.netlify.app/)**
+<!-- 部署后，请将上面的链接替换为您的真实网址 -->
 
 ---
+<br>
 
-## 🛠️ 技术栈
+# 🇺🇸 English Version
 
-- **HTML5**: 采用语义化标签，结构清晰，对SEO友好。
-- **CSS3**:
-  - 使用 **Flexbox** 和 **Grid**进行布局。
-  - 使用 **CSS自定义属性 (变量)** 管理主题颜色和尺寸，方便一键换肤。
-- **Vanilla JavaScript (ES6+)**: 无任何框架依赖，实现所有动态交互。
-- **Font Awesome**: 用于展示丰富的图标。
-- **Google Fonts**: 提供高质量的网页字体。
+## ✨ Features
 
----
+*   **Elegant & Modern UI**: A clean and professional design that puts content first.
+*   **Dual Theme System**: Features a beautiful Day (Light) and Night (Dark) mode, with a persistent theme switcher that remembers the user's choice via `localStorage`.
+*   **Atmospheric Background**: Utilizes a high-quality, fixed-position background image with a dynamic overlay that adapts to the current theme, creating a sense of depth and atmosphere.
+*   **Fully Responsive**: Meticulously crafted to look and work perfectly on all devices, from large desktops to small mobile phones.
+*   **Modular & Maintainable Code**: The project is structured with a clear separation of concerns: HTML for content, component-based CSS for styles, and Vanilla JavaScript for interactions.
+*   **Interactive Components**: Includes smooth scrolling, modal pop-ups for contact info, and a dynamic project filter.
 
-## 📁 项目结构
+## 🛠️ Tech Stack
 
-项目采用结构化的目录，将不同类型的文件分类存放。
+*   **HTML5**: Built with semantic and accessible markup.
+*   **CSS3**:
+    *   CSS Custom Properties (Variables) for effortless theming.
+    *   Flexbox and Grid for robust layouts.
+    *   Component-based CSS using `@import` for modularity.
+*   **Vanilla JavaScript (ES6+)**:
+    *   No frameworks or libraries for core functionality.
+    *   `localStorage` API for theme persistence.
+*   **Font Awesome**: For a rich set of high-quality icons.
+*   **Google Fonts**: For elegant and readable typography.
+
+## 📁 Project Structure
 
 ```
 /Albert-Homepage/
 |
-├── index.html              # 网站主入口
+|-- index.html              # Main and only HTML file
+|-- README.md               # You are here!
 |
-├── assets/                 # 静态资源
-|   |
-|   ├── css/                # 样式
-|   |   ├── main.css        # 主样式与全局变量
-|   |   └── components/     # 组件样式
-|   |       ├── _header.css
-|   |       └── ... (其他组件)
-|   |
-|   ├── js/                 # 脚本
-|   |   └── main.js         # 所有交互逻辑
-|   |
-|   └── images/             # 图片
-|       ├── avatar.jpg
-|       └── ... (其他图片)
-|
-└── README.md               # 项目说明
+`-- assets/                 # All static resources
+    |-- css/
+    |-- images/
+    `-- js/
 ```
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+1.  Clone the repo:
+    ```sh
+    git clone https://github.com/Albert-Chen04/Albert-Homepage.git
+    ```
+2.  Navigate to the project directory:
+    ```sh
+    cd Albert-Homepage
+    ```
+3.  Run the project using the **Live Server** extension in Visual Studio Code, or by opening `index.html` directly in your browser.
+
+## 🎨 Customization
+
+Making this portfolio your own is easy:
+
+1.  **Edit Content**: Open `index.html` and change the text in all sections.
+2.  **Replace Images**: Add your images (`avatar.jpg`, QR codes, project covers) to the `assets/images/` folder and update the paths in `index.html`.
+3.  **Change Background Image**: In `assets/css/main.css`, find the `body` selector and change the `background-image` URL to your preferred image.
+4.  **Change Theme Colors**: In `assets/css/main.css`, modify the CSS variables at the top of the file to change the entire color scheme.
 
 ---
+<br>
 
-## 🚀 如何开始
+# 🇨🇳 中文版本
 
-您可以轻松地克隆本项目，并进行个性化修改。
+## ✨ 特色功能
 
-### 1. 克隆仓库
+*   **优雅 & 现代化的用户界面**: 简洁专业的设计，让内容成为焦点。
+*   **双主题系统**: 支持精美的日间（亮色）与夜间（暗色）模式，并通过 `localStorage` 记忆用户的主题偏好。
+*   **氛围感背景**: 采用高质量的固定背景图，并叠加一层可根据主题动态变化的蒙版，创造出独特的深度和氛围感。
+*   **完全响应式设计**: 精心制作，确保在桌面、平板和手机等所有设备上都能完美呈现和运行。
+*   **模块化 & 易于维护的代码**: 项目结构遵循关注点分离原则：HTML负责内容结构，组件化的CSS负责样式，原生JavaScript负责交互。
+*   **丰富的交互组件**: 包括平滑滚动、联系方式弹窗、以及动态项目筛选器。
 
-```bash
-git clone https://github.com/Albert-Chen04/Albert-Homepage.git
+## 🛠️ 技术栈
+
+*   **HTML5**: 使用语义化标签构建，结构清晰且对SEO友好。
+*   **CSS3**:
+    *   **CSS自定义属性 (变量)** 实现轻松的主题切换和颜色管理。
+    *   **Flexbox** 和 **Grid** 用于构建强大而现代的布局。
+    *   使用 `@import` 实现**组件化CSS**，便于维护。
+*   **原生 JavaScript (ES6+)**:
+    *   核心功能无任何框架或库的依赖，保持轻量。
+    *   使用 `localStorage` API 实现主题持久化。
+*   **Font Awesome**: 提供丰富的高质量图标。
+*   **Google Fonts**: 提供优雅且易于阅读的字体。
+
+## 📁 项目结构
+
+```
+/Albert-Homepage/
+|
+|-- index.html              # 主入口HTML文件
+|-- README.md               # 本文件
+|
+`-- assets/                 # 存放所有静态资源
+    |-- css/                # 样式文件夹
+    |-- images/             # 图片文件夹
+    `-- js/                 # 脚本文件夹
 ```
 
-### 2. 进入项目目录
+## 🚀 快速开始
 
-```bash
-cd Albert-Homepage
-```
+按照以下步骤，即可在本地运行此项目。
 
-### 3. 在浏览器中打开
-
-直接在浏览器中打开 `index.html` 文件即可预览网站。
-
-为了获得更好的开发体验（例如实时刷新），推荐使用 VS Code 的 **Live Server** 插件来运行项目。
-
----
+1.  克隆本仓库:
+    ```sh
+    git clone https://github.com/Albert-Chen04/Albert-Homepage.git
+    ```
+2.  进入项目目录:
+    ```sh
+    cd Albert-Homepage
+    ```
+3.  运行项目:
+    *   最简单的方式是使用 **Visual Studio Code** 的 **Live Server** 插件。
+    *   或者，直接在浏览器中打开 `index.html` 文件。
 
 ## 🎨 如何定制
 
-您可以非常方便地将这个网站修改为您自己的个人主页。
+您可以轻松地将这个模板修改为您自己的主页：
 
-1.  **修改个人信息**:
-    - 打开 `index.html` 文件。
-    - 替换所有文本内容，例如“关于我”的介绍、项目描述、时间线事件等。
-    - 替换所有的链接，例如您的GitHub、B站、微博链接。
-
-2.  **替换图片**:
-    - 将您的个人头像命名为 `avatar.jpg` 并替换 `assets/images/` 目录下的同名文件。
-    - 同样地，替换 `favicon.ico`、项目封面图和二维码图片。
-    - **注意**: 如果您使用了不同的文件名，请务必在 `index.html` 的 `<img>` 标签中更新 `src` 路径。
-
-3.  **修改颜色主题**:
-    - 打开 `assets/css/main.css` 文件。
-    - 在顶部的 `:root` 选择器中，修改CSS变量的值即可改变整个网站的主题色。
-    ```css
-    :root {
-        --primary-color: #6a5af9; /* 主要颜色 */
-        --highlight-color: #ff7e5f; /* 高亮/渐变色 */
-        /* ... 其他颜色 */
-    }
-    ```
-
-4.  **添加/修改项目**:
-    - 在 `index.html` 的 `<section id="projects">` 中，复制一个 `project-card` 块并修改其中的内容即可添加新项目。
+1.  **编辑内容**: 打开 `index.html` 文件，替换所有区域的文本为您自己的信息。
+2.  **替换图片**: 将您的个人头像、二维码、项目封面图等放入 `assets/images/` 文件夹，并在 `index.html` 中更新对应的路径。
+3.  **更换背景图**: 在 `assets/css/main.css` 文件中，找到 `body` 选择器，将其中的 `background-image` 的 URL 替换为您喜欢的图片地址。
+4.  **修改主题颜色**: 在 `assets/css/main.css` 文件顶部，通过修改CSS变量的值，即可轻松改变整个网站的配色方案。
 
 ---
 
 ## 📜 许可证
 
-本项目采用 [MIT License](LICENSE)。 <!-- 如果您想添加许可证，可以创建一个名为 LICENSE 的文件 -->
+本项目采用 MIT 许可证。
+
+## 致谢
+
+*   背景图片来源: [Unsplash](https://unsplash.com)
+*   图标来源: [Font Awesome](https://fontawesome.com)
